@@ -67,6 +67,7 @@
     $("prevQuestion").addEventListener("click", () => move(-1));
     $("nextQuestion").addEventListener("click", () => move(1));
     $("clearAnswer").addEventListener("click", clearCurrentAnswer);
+    $("revealAnswer").addEventListener("click", toggleRevealAnswer);
     $("flagQuestion").addEventListener("click", toggleFlag);
     $("finishSession").addEventListener("click", finishSession);
     $("retryWrong").addEventListener("click", () => { $("kindFilter").value = "wrong"; startSession(); });
@@ -84,7 +85,7 @@
     if ($("shuffleToggle").checked) pool = shuffle(pool);
     const requested = $("countFilter").value;
     const count = requested === "all" ? pool.length : Math.min(Number(requested), pool.length);
-    session = { questions: pool.slice(0, count), index: 0, answers: {}, flags: new Set(), seconds: 0 };
+    session = { questions: pool.slice(0, count), index: 0, answers: {}, flags: new Set(), revealed: new Set(), visibleAnswers: new Set(), seconds: 0 };
     $("emptyPractice").classList.add("hidden"); $("resultArea").classList.add("hidden"); $("sessionArea").classList.remove("hidden");
     clearInterval(timerHandle); timerHandle = setInterval(() => { session.seconds += 1; $("sessionTimer").textContent = formatTime(session.seconds); }, 1000);
     renderQuestion();
@@ -96,25 +97,28 @@
     const visual = $("questionVisual");
     if (q.image) { visual.innerHTML = `<img src="${esc(q.image)}" alt="صورة السؤال">`; visual.classList.remove("hidden"); }
     else { visual.classList.add("hidden"); visual.innerHTML = ""; }
-    $("optionsList").innerHTML = Object.entries(q.options || {}).map(([letter, text]) => { const selected = session.answers[q.id] === letter; return `<label class="option ${selected ? "selected" : ""}" data-letter="${letter}"><input type="radio" name="answer" value="${letter}" ${selected ? "checked" : ""}><span class="option-letter">${letter}.</span>${esc(text)}</label>`; }).join("");
+    const showingAnswer = session.visibleAnswers.has(q.id);
+    $("optionsList").innerHTML = Object.entries(q.options || {}).map(([letter, text]) => { const selected = session.answers[q.id] === letter; const correct = showingAnswer && q.answer === letter; return `<label class="option ${selected ? "selected" : ""} ${correct ? "correct-revealed" : ""}" data-letter="${letter}"><input type="radio" name="answer" value="${letter}" ${selected ? "checked" : ""}><span class="option-letter">${letter}.</span>${esc(text)}</label>`; }).join("");
     $("optionsList").querySelectorAll(".option").forEach(option => option.addEventListener("click", event => { const letter = option.dataset.letter; session.answers[q.id] === letter ? delete session.answers[q.id] : session.answers[q.id] = letter; event.preventDefault(); renderQuestion(); }));
     $("prevQuestion").disabled = session.index === 0; $("nextQuestion").textContent = session.index === session.questions.length - 1 ? "مراجعة الخريطة" : "التالي"; $("flagQuestion").textContent = session.flags.has(q.id) ? "★ معلّم" : "☆ مراجعة"; $("clearAnswer").disabled = !session.answers[q.id];
+    $("revealAnswer").textContent = showingAnswer ? "إخفاء الإجابة" : "إظهار الإجابة"; $("revealAnswer").disabled = !q.answer; $("revealAnswer").classList.toggle("active", showingAnswer); $("revealedBadge").classList.toggle("hidden", !session.revealed.has(q.id));
     $("questionProgress").style.width = `${((session.index + 1) / session.questions.length) * 100}%`; renderMap();
   }
   function renderMap() {
-    $("questionMap").innerHTML = session.questions.map((q, i) => `<button class="${session.answers[q.id] ? "answered" : ""} ${i === session.index ? "current" : ""} ${session.flags.has(q.id) ? "flagged" : ""}" data-index="${i}">${i + 1}</button>`).join("");
+    $("questionMap").innerHTML = session.questions.map((q, i) => `<button class="${session.answers[q.id] ? "answered" : ""} ${i === session.index ? "current" : ""} ${session.flags.has(q.id) ? "flagged" : ""} ${session.revealed.has(q.id) ? "revealed" : ""}" data-index="${i}">${i + 1}</button>`).join("");
     $("questionMap").querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => { session.index = Number(btn.dataset.index); renderQuestion(); }));
   }
   function move(delta) { session.index = Math.max(0, Math.min(session.questions.length - 1, session.index + delta)); renderQuestion(); }
   function clearCurrentAnswer() { delete session.answers[session.questions[session.index].id]; renderQuestion(); }
   function toggleFlag() { const id = session.questions[session.index].id; session.flags.has(id) ? session.flags.delete(id) : session.flags.add(id); renderQuestion(); }
+  function toggleRevealAnswer() { const q = session.questions[session.index]; if (!q.answer) return; if (session.visibleAnswers.has(q.id)) session.visibleAnswers.delete(q.id); else { session.visibleAnswers.add(q.id); session.revealed.add(q.id); } renderQuestion(); }
 
   function finishSession() {
     if (!session) return;
     const unanswered = session.questions.filter(q => !session.answers[q.id]).length;
     if (unanswered && !confirm(`لديك ${unanswered} سؤال/أسئلة بدون إجابة. هل تريد الإنهاء؟`)) return;
     clearInterval(timerHandle);
-    const scored = session.questions.filter(q => q.answer && q.options?.[q.answer]);
+    const scored = session.questions.filter(q => q.answer && q.options?.[q.answer] && !session.revealed.has(q.id));
     const answered = session.questions.filter(q => session.answers[q.id]).length;
     const correct = scored.filter(q => session.answers[q.id] === q.answer).length;
     const wrong = scored.filter(q => session.answers[q.id] && session.answers[q.id] !== q.answer).length;
@@ -122,13 +126,14 @@
     const penalized = scored.length ? Math.max(0, correct - wrong / 3) : null;
     const percent = scored.length ? Math.round((penalized / scored.length) * 1000) / 10 : null;
     const wrongIds = scored.filter(q => session.answers[q.id] && session.answers[q.id] !== q.answer).map(q => q.id);
-    const attempt = { username: currentUser.name, date: new Date().toISOString(), count: session.questions.length, correct, wrong, blank, answered, scoredCount: scored.length, penalized: penalized === null ? null : Math.round(penalized * 100) / 100, percent, seconds: session.seconds, responses: { ...session.answers }, wrongIds, role: $("roleFilter").selectedOptions[0].textContent, topic: $("topicFilter").selectedOptions[0].textContent };
+    const revealedIds = [...session.revealed];
+    const attempt = { username: currentUser.name, date: new Date().toISOString(), count: session.questions.length, correct, wrong, blank, answered, scoredCount: scored.length, revealedIds, penalized: penalized === null ? null : Math.round(penalized * 100) / 100, percent, seconds: session.seconds, responses: { ...session.answers }, wrongIds, role: $("roleFilter").selectedOptions[0].textContent, topic: $("topicFilter").selectedOptions[0].textContent };
     DB.addAttempt(attempt); attempts = DB.getAttempts(currentUser.name); $("attemptCount").textContent = attempts.length;
     $("sessionArea").classList.add("hidden"); $("resultArea").classList.remove("hidden");
     if (scored.length) {
-      $("resultPercent").textContent = `${percent}%`; document.querySelector(".result-ring").style.setProperty("--score-angle", `${Math.max(0, Math.min(360, percent * 3.6))}deg`); $("resultTitle").textContent = percent >= 75 ? "أداء قوي" : "راجع أخطاءك وأعد المحاولة"; $("resultStats").innerHTML = `<span>صحيح <strong>${correct}</strong></span><span>خطأ <strong>${wrong}</strong></span><span>فارغ <strong>${blank}</strong></span><span>بعد الخصم <strong>${attempt.penalized}/${scored.length}</strong></span>`; $("resultNote").textContent = wrongIds.length ? "أضيفت الأسئلة الخاطئة إلى أخطائي السابقة." : "لا توجد أخطاء في الأسئلة المصححة."; $("retryWrong").classList.toggle("hidden", !wrongIds.length);
+      $("resultPercent").textContent = `${percent}%`; document.querySelector(".result-ring").style.setProperty("--score-angle", `${Math.max(0, Math.min(360, percent * 3.6))}deg`); $("resultTitle").textContent = percent >= 75 ? "أداء قوي" : "راجع أخطاءك وأعد المحاولة"; $("resultStats").innerHTML = `<span>صحيح <strong>${correct}</strong></span><span>خطأ <strong>${wrong}</strong></span><span>فارغ <strong>${blank}</strong></span><span>مستبعد <strong>${revealedIds.length}</strong></span><span>بعد الخصم <strong>${attempt.penalized}/${scored.length}</strong></span>`; $("resultNote").textContent = revealedIds.length ? `استُبعد ${revealedIds.length} سؤال من الدرجة لأنك أظهرت إجابته.` : (wrongIds.length ? "أضيفت الأسئلة الخاطئة إلى أخطائي السابقة." : "لا توجد أخطاء في الأسئلة المصححة."); $("retryWrong").classList.toggle("hidden", !wrongIds.length);
     } else {
-      $("resultPercent").textContent = "حُفظت"; document.querySelector(".result-ring").style.setProperty("--score-angle", `${Math.round(answered / session.questions.length * 360)}deg`); $("resultTitle").textContent = "حُفظت المحاولة بدون تصحيح"; $("resultStats").innerHTML = `<span>تمت الإجابة <strong>${answered}</strong></span><span>فارغ <strong>${blank}</strong></span>`; $("resultNote").textContent = "لا توجد إجابات محددة لهذه الأسئلة في المفتاح."; $("retryWrong").classList.add("hidden");
+      $("resultPercent").textContent = "حُفظت"; document.querySelector(".result-ring").style.setProperty("--score-angle", `${Math.round(answered / session.questions.length * 360)}deg`); $("resultTitle").textContent = "حُفظت المحاولة بدون تصحيح"; $("resultStats").innerHTML = `<span>تمت الإجابة <strong>${answered}</strong></span><span>فارغ <strong>${blank}</strong></span><span>مستبعد <strong>${revealedIds.length}</strong></span>`; $("resultNote").textContent = revealedIds.length ? "كل الأسئلة القابلة للتصحيح عُرضت إجاباتها، لذلك لم تُحسب درجة." : "لا توجد إجابات محددة لهذه الأسئلة في المفتاح."; $("retryWrong").classList.add("hidden");
     }
     renderProgress();
   }

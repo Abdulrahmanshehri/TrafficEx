@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="بنك تدريب لاختبار Traffic & Operations">
-  <title>Traffic & Operations</title>
+  <title>بنك تدريب Traffic & Operations</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <form id="loginForm" class="login-card">
       <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="section-kicker">Traffic &amp; Operations</div>
-      <h1>الدخول</h1>
+      <h1>دخول المتدرب</h1>
       <label>اسم المستخدم<input id="loginName" autocomplete="username" required></label>
       <label>كلمة المرور<input id="loginPassword" type="password" autocomplete="current-password" required></label>
       <button class="primary wide" type="submit">دخول</button>
@@ -26,7 +26,7 @@
 
   <div id="appShell" class="hidden">
     <header class="topbar">
-      <div class="brand"><div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div><div><h1>Traffic &amp; Operations</h1><p>تدريب نظري ومتابعة النتائج</p></div></div>
+      <div class="brand"><div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div><div><h1>بنك تدريب Traffic &amp; Operations</h1><p>تدريب نظري ومتابعة النتائج</p></div></div>
       <div class="top-stats"><span>مرحبًا <strong id="currentUserName"></strong></span><span><strong id="totalQuestions">0</strong> MCQ</span><span><strong id="attemptCount">0</strong> محاولات</span><button id="logoutUser" class="top-button">خروج</button></div>
     </header>
     <nav class="tabs" aria-label="أقسام الصفحة"><button class="tab active" data-view="practice">التدريب النظري</button><button class="tab key-tab" data-view="key">مفتاح الإجابات</button><button class="tab" data-view="progress">نتائجي</button></nav>
@@ -47,7 +47,7 @@
           <div id="sessionArea" class="session hidden">
             <div class="session-head"><div><span id="questionIndex" class="pill"></span><span id="questionTopic" class="muted"></span></div><div id="sessionTimer" class="timer">00:00</div></div>
             <div class="progress-track"><span id="questionProgress"></span></div>
-            <article class="question-card"><div class="question-meta"><span id="questionId"></span><span id="questionRole"></span></div><h2 id="questionText" class="english"></h2><div id="questionVisual" class="question-visual hidden"></div><fieldset id="optionsList" class="options english"></fieldset><div class="card-actions"><button id="prevQuestion" class="secondary">السابق</button><button id="clearAnswer" class="secondary">مسح الإجابة</button><button id="flagQuestion" class="secondary">☆ مراجعة</button><button id="nextQuestion" class="primary">التالي</button></div></article>
+            <article class="question-card"><div class="question-meta"><span id="questionId"></span><span id="questionRole"></span><span id="revealedBadge" class="revealed-badge hidden">لن يُحسب</span></div><h2 id="questionText" class="english"></h2><div id="questionVisual" class="question-visual hidden"></div><fieldset id="optionsList" class="options english"></fieldset><div class="card-actions"><button id="prevQuestion" class="secondary">السابق</button><button id="clearAnswer" class="secondary">مسح الإجابة</button><button id="revealAnswer" class="reveal-button">إظهار الإجابة</button><button id="flagQuestion" class="secondary">☆ مراجعة</button><button id="nextQuestion" class="primary">التالي</button></div></article>
             <div class="question-map" id="questionMap"></div><button id="finishSession" class="finish-button">إنهاء وتصحيح المحاولة</button>
           </div>
           <div id="resultArea" class="result-card hidden"><div class="result-ring"><span id="resultPercent">0%</span></div><div><div class="section-kicker">اكتملت المحاولة</div><h2 id="resultTitle">النتيجة</h2><div id="resultStats" class="result-stats"></div><p id="resultNote"></p><div class="inline-actions"><button id="retryWrong" class="primary">تدريب على الأخطاء</button><button class="secondary go-key">عرض مفتاح الإجابات</button></div></div></div>
@@ -66,7 +66,7 @@
       <section class="admin-summary"><div class="metric"><strong id="adminQuestionCount">0</strong><span>سؤال</span></div><div class="metric"><strong id="adminAnswerCount">0</strong><span>إجابة محددة</span></div><div class="metric"><strong id="adminUserCount">0</strong><span>مستخدم</span></div><div class="metric"><strong id="adminAttemptCount">0</strong><span>محاولة</span></div></section>
       <section class="admin-grid">
         <div class="admin-card"><div class="page-heading"><div><div class="section-kicker">Question Editor</div><h2 id="editorTitle">إضافة سؤال</h2></div><button id="cancelEdit" class="secondary hidden">إلغاء التعديل</button></div>
-          <form id="questionForm" class="question-form"><input id="editOriginalId" type="hidden"><label>رمز السؤال<input id="editId" placeholder="يُنشأ تلقائيًا عند تركه فارغًا"></label><label>الوظيفة<select id="editRole"><option>Both</option><option>Traffic &amp; Operations Chief</option><option>Traffic Supervisor</option></select></label><label>الموضوع<input id="editTopic" required></label><label class="full">نص السؤال<textarea id="editQuestion" rows="4" required></textarea></label><label class="english">A<input id="editA" required></label><label class="english">B<input id="editB" required></label><label class="english">C<input id="editC" required></label><label class="english">D<input id="editD" required></label><label>الإجابة الصحيحة<select id="editAnswer"><option value="">غير محددة</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label><button class="primary" type="submit">حفظ السؤال</button></form><p id="editorStatus" class="status-line"></p>
+          <form id="questionForm" class="question-form"><input id="editOriginalId" type="hidden"><label>رمز السؤال<input id="editId" placeholder="يُنشأ تلقائيًا عند تركه فارغًا"></label><label>الوظيفة<select id="editRole"><option>Both</option><option>Traffic &amp; Operations Chief</option><option>Traffic Supervisor</option></select></label><label>الموضوع<input id="editTopic" required></label><label class="full">نص السؤال<textarea id="editQuestion" rows="4" required></textarea></label><label class="english">A<textarea id="editA" rows="2" required></textarea></label><label class="english">B<textarea id="editB" rows="2" required></textarea></label><label class="english">C<textarea id="editC" rows="2" required></textarea></label><label class="english">D<textarea id="editD" rows="2" required></textarea></label><label>الإجابة الصحيحة<select id="editAnswer"><option value="">غير محددة</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label><button class="primary" type="submit">حفظ السؤال</button></form><p id="editorStatus" class="status-line"></p>
         </div>
         <div class="admin-card"><div class="answer-toolbar"><div><div class="section-kicker">Question Bank</div><h2>الأسئلة</h2></div><input id="adminSearch" type="search" placeholder="بحث..."></div><div id="adminQuestionList" class="admin-question-list"></div></div>
       </section>
