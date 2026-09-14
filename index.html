@@ -3,185 +3,77 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="بنك تدريب محلي لاختبار Traffic & Operations Chief وTraffic Supervisor">
+  <meta name="description" content="بنك تدريب لاختبار Traffic & Operations">
   <title>بنك تدريب Traffic & Operations</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1e33'/%3E%3Cpath d='M13 42h38M18 34h28M24 26h16M30 18h4' stroke='%23f7b84b' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
+  <section id="loginScreen" class="gate hidden">
+    <form id="loginForm" class="login-card">
       <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
-      <div>
-        <h1>بنك تدريب Traffic &amp; Operations</h1>
-        <p>أسئلة سابقة + بنك Rule Book — بدون إجابات مفترضة</p>
-      </div>
-    </div>
-    <div class="top-stats" aria-label="ملخص البنك">
-      <span><strong id="totalQuestions">0</strong> MCQ</span>
-      <span><strong id="attemptCount">0</strong> محاولات</span>
-    </div>
-  </header>
+      <div class="section-kicker">Traffic &amp; Operations</div>
+      <h1>دخول المتدرب</h1>
+      <label>اسم المستخدم<input id="loginName" autocomplete="username" required></label>
+      <label>كلمة المرور<input id="loginPassword" type="password" autocomplete="current-password" required></label>
+      <button class="primary wide" type="submit">دخول</button>
+      <p id="loginError" class="form-error" role="alert"></p>
+    </form>
+  </section>
 
-  <nav class="tabs" aria-label="أقسام الصفحة">
-    <button class="tab active" data-view="practice">التدريب النظري</button>
-    <button class="tab key-tab" data-view="key">الإجابات الموثقة</button>
-    <button class="tab" data-view="progress">النتائج</button>
-    <button class="tab" data-view="manage">تحديث البنك</button>
-  </nav>
+  <section id="closedScreen" class="gate hidden">
+    <div class="login-card closed-card"><div class="lock">×</div><h1>الموقع مغلق مؤقتًا</h1><p>سيعود التدريب عند إعادة فتحه من الإدارة.</p></div>
+  </section>
 
-  <main>
-    <section id="practice" class="view active">
-      <aside class="panel setup-panel">
-        <div class="section-kicker">إعداد المحاولة</div>
-        <h2>اختر نطاقك</h2>
-        <label>الوظيفة
-          <select id="roleFilter"></select>
-        </label>
-        <label>نوع الأسئلة
-          <select id="kindFilter">
-            <option value="all">الكل</option>
-            <option value="past">الاختبارات السابقة فقط</option>
-            <option value="bank">بنك الأسئلة فقط</option>
-            <option value="wrong">أخطائي السابقة</option>
-          </select>
-        </label>
-        <label>الموضوع
-          <select id="topicFilter"></select>
-        </label>
-        <label>عدد الأسئلة
-          <select id="countFilter">
-            <option value="10">10</option>
-            <option value="20" selected>20</option>
-            <option value="30">30</option>
-            <option value="all">كل المتاح</option>
-          </select>
-        </label>
-        <label class="checkline"><input type="checkbox" id="shuffleToggle" checked> ترتيب عشوائي</label>
-        <button id="startSession" class="primary wide">ابدأ محاولة جديدة</button>
-        <div class="formula-note">
-          <span>صيغة المحاكاة</span>
-          <strong>Correct − Wrong ÷ 3</strong>
-          <small>تُطبّق الصيغة فقط على الأسئلة التي نتحقق منها لاحقًا من وثيقة رسمية. حاليًا تُحفظ إجاباتك دون تصحيح.</small>
-        </div>
-      </aside>
-
-      <div class="workspace">
-        <div id="emptyPractice" class="empty-state">
-          <div class="big-number">20</div>
-          <h2>ابدأ باختبار تجريبي</h2>
-          <p>اختر النطاق من اللوحة، ثم حل الأسئلة. سنراجعها سويًا مقابل الوثائق الرسمية.</p>
-        </div>
-
-        <div id="sessionArea" class="session hidden">
-          <div class="session-head">
-            <div>
-              <span id="questionIndex" class="pill"></span>
-              <span id="questionTopic" class="muted"></span>
-            </div>
-            <div id="sessionTimer" class="timer">00:00</div>
+  <div id="appShell" class="hidden">
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div><div><h1>بنك تدريب Traffic &amp; Operations</h1><p>تدريب نظري ومتابعة النتائج</p></div></div>
+      <div class="top-stats"><span>مرحبًا <strong id="currentUserName"></strong></span><span><strong id="totalQuestions">0</strong> MCQ</span><span><strong id="attemptCount">0</strong> محاولات</span><button id="logoutUser" class="top-button">خروج</button></div>
+    </header>
+    <nav class="tabs" aria-label="أقسام الصفحة"><button class="tab active" data-view="practice">التدريب النظري</button><button class="tab key-tab" data-view="key">مفتاح الإجابات</button><button class="tab" data-view="progress">نتائجي</button></nav>
+    <main>
+      <section id="practice" class="view active">
+        <aside class="panel setup-panel">
+          <div class="section-kicker">إعداد المحاولة</div><h2>اختر نطاقك</h2>
+          <label>الوظيفة<select id="roleFilter"></select></label>
+          <label>نوع الأسئلة<select id="kindFilter"><option value="bank">بنك الأسئلة</option><option value="wrong">أخطائي السابقة</option></select></label>
+          <label>الموضوع<select id="topicFilter"></select></label>
+          <label>عدد الأسئلة<select id="countFilter"><option value="10">10</option><option value="20" selected>20</option><option value="30">30</option><option value="all">كل المتاح</option></select></label>
+          <label class="checkline"><input type="checkbox" id="shuffleToggle" checked> ترتيب عشوائي</label>
+          <button id="startSession" class="primary wide">ابدأ محاولة جديدة</button>
+          <div class="formula-note"><span>صيغة المحاكاة</span><strong>Correct − Wrong ÷ 3</strong><small>تُطبّق على الأسئلة الموجودة في مفتاح الإجابات.</small></div>
+        </aside>
+        <div class="workspace">
+          <div id="emptyPractice" class="empty-state"><div class="big-number">20</div><h2>ابدأ باختبار تجريبي</h2><p>اختر النطاق، ثم حل الأسئلة وراجع نتيجتك.</p></div>
+          <div id="sessionArea" class="session hidden">
+            <div class="session-head"><div><span id="questionIndex" class="pill"></span><span id="questionTopic" class="muted"></span></div><div id="sessionTimer" class="timer">00:00</div></div>
+            <div class="progress-track"><span id="questionProgress"></span></div>
+            <article class="question-card"><div class="question-meta"><span id="questionId"></span><span id="questionRole"></span></div><h2 id="questionText" class="english"></h2><div id="questionVisual" class="question-visual hidden"></div><fieldset id="optionsList" class="options english"></fieldset><div class="card-actions"><button id="prevQuestion" class="secondary">السابق</button><button id="clearAnswer" class="secondary">مسح الإجابة</button><button id="flagQuestion" class="secondary">☆ مراجعة</button><button id="nextQuestion" class="primary">التالي</button></div></article>
+            <div class="question-map" id="questionMap"></div><button id="finishSession" class="finish-button">إنهاء وتصحيح المحاولة</button>
           </div>
-          <div class="progress-track"><span id="questionProgress"></span></div>
-          <article class="question-card">
-            <div class="question-meta">
-              <span id="questionId"></span>
-              <span id="questionRole"></span>
-              <span id="questionSourceType"></span>
-            </div>
-            <h2 id="questionText" class="english"></h2>
-            <div id="questionVisual" class="question-visual hidden" aria-label="الصورة المرافقة للسؤال"></div>
-            <fieldset id="optionsList" class="options english"></fieldset>
-            <div class="card-actions">
-              <button id="prevQuestion" class="secondary">السابق</button>
-              <button id="clearAnswer" class="secondary">مسح الإجابة</button>
-              <button id="flagQuestion" class="secondary">☆ مراجعة</button>
-              <button id="nextQuestion" class="primary">التالي</button>
-            </div>
-          </article>
-          <div class="question-map" id="questionMap" aria-label="خريطة الأسئلة"></div>
-          <button id="finishSession" class="finish-button">إنهاء وتصحيح المحاولة</button>
+          <div id="resultArea" class="result-card hidden"><div class="result-ring"><span id="resultPercent">0%</span></div><div><div class="section-kicker">اكتملت المحاولة</div><h2 id="resultTitle">النتيجة</h2><div id="resultStats" class="result-stats"></div><p id="resultNote"></p><div class="inline-actions"><button id="retryWrong" class="primary">تدريب على الأخطاء</button><button class="secondary go-key">عرض مفتاح الإجابات</button></div></div></div>
         </div>
+      </section>
+      <section id="key" class="view single-view"><div class="answer-shell"><div class="answer-guard" id="answerGuard"><div class="lock">KEY</div><h2>مفتاح الإجابات</h2><p>افتح المفتاح لمراجعة الإجابات الصحيحة.</p><button id="unlockAnswers" class="warning">عرض مفتاح الإجابات</button></div><div id="answerContent" class="hidden"><div class="answer-toolbar"><div><div class="section-kicker">Answer Key</div><h2>الإجابات الصحيحة</h2></div><input id="answerSearch" type="search" placeholder="ابحث برمز السؤال أو نصه..."></div><div id="mcqKey" class="answer-grid"></div></div></div></section>
+      <section id="progress" class="view single-view"><div class="progress-page"><div class="page-heading"><div><div class="section-kicker">متابعة الأداء</div><h2>سجل محاولاتي</h2></div></div><div id="progressCards" class="metric-grid"></div><div class="table-wrap"><table><thead><tr><th>التاريخ</th><th>النطاق</th><th>النتيجة</th><th>صحيح</th><th>خطأ</th><th>فارغ</th><th>المدة</th></tr></thead><tbody id="attemptTable"></tbody></table></div></div></section>
+    </main>
+  </div>
 
-        <div id="resultArea" class="result-card hidden">
-          <div class="result-ring"><span id="resultPercent">0%</span></div>
-          <div>
-            <div class="section-kicker">اكتملت المحاولة</div>
-            <h2 id="resultTitle">النتيجة</h2>
-            <div id="resultStats" class="result-stats"></div>
-            <p id="resultNote"></p>
-            <div class="inline-actions">
-              <button id="retryWrong" class="primary">تدريب على الأخطاء</button>
-              <button class="secondary go-key">عرض الإجابات الموثقة</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="adminGate" class="gate hidden"><form id="adminLoginForm" class="login-card"><div class="section-kicker">Administration</div><h1>دخول الإدارة</h1><label>اسم المستخدم<input id="adminName" autocomplete="username" required></label><label>كلمة المرور<input id="adminPassword" type="password" required></label><button class="primary wide" type="submit">دخول</button><p id="adminLoginError" class="form-error"></p></form></section>
 
-    <section id="key" class="view single-view">
-      <div class="answer-shell">
-        <div class="answer-guard" id="answerGuard">
-          <div class="lock">KEY</div>
-          <h2>الإجابات الموثقة فقط</h2>
-          <p>لن يظهر هنا أي جواب مأخوذ من دوائر المتقدمين أو علامات أوراق الاختبار. نضيف الإجابة فقط بعد التحقق من Controlled Document.</p>
-          <button id="unlockAnswers" class="warning">عرض الإجابات الموثقة</button>
+  <div id="adminShell" class="hidden">
+    <header class="topbar"><div class="brand"><div class="brand-mark"><span></span><span></span><span></span></div><div><h1>لوحة التحكم</h1><p>إدارة الأسئلة والنتائج</p></div></div><div class="top-stats"><button id="toggleSite" class="warning">إغلاق الموقع</button><button id="logoutAdmin" class="top-button">خروج</button></div></header>
+    <main class="admin-page">
+      <section class="admin-summary"><div class="metric"><strong id="adminQuestionCount">0</strong><span>سؤال</span></div><div class="metric"><strong id="adminAnswerCount">0</strong><span>إجابة محددة</span></div><div class="metric"><strong id="adminUserCount">0</strong><span>مستخدم</span></div><div class="metric"><strong id="adminAttemptCount">0</strong><span>محاولة</span></div></section>
+      <section class="admin-grid">
+        <div class="admin-card"><div class="page-heading"><div><div class="section-kicker">Question Editor</div><h2 id="editorTitle">إضافة سؤال</h2></div><button id="cancelEdit" class="secondary hidden">إلغاء التعديل</button></div>
+          <form id="questionForm" class="question-form"><input id="editOriginalId" type="hidden"><label>رمز السؤال<input id="editId" placeholder="يُنشأ تلقائيًا عند تركه فارغًا"></label><label>الوظيفة<select id="editRole"><option>Both</option><option>Traffic &amp; Operations Chief</option><option>Traffic Supervisor</option></select></label><label>الموضوع<input id="editTopic" required></label><label class="full">نص السؤال<textarea id="editQuestion" rows="4" required></textarea></label><label class="english">A<input id="editA" required></label><label class="english">B<input id="editB" required></label><label class="english">C<input id="editC" required></label><label class="english">D<input id="editD" required></label><label>الإجابة الصحيحة<select id="editAnswer"><option value="">غير محددة</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label><button class="primary" type="submit">حفظ السؤال</button></form><p id="editorStatus" class="status-line"></p>
         </div>
-        <div id="answerContent" class="hidden">
-          <div class="answer-toolbar">
-            <div>
-              <div class="section-kicker">Verified Answers</div>
-              <h2>الإجابات المعتمدة ومصادرها</h2>
-            </div>
-            <input id="answerSearch" type="search" placeholder="ابحث برقم السؤال أو نصه...">
-          </div>
-          <div id="mcqKey" class="answer-grid"></div>
-        </div>
-      </div>
-    </section>
+        <div class="admin-card"><div class="answer-toolbar"><div><div class="section-kicker">Question Bank</div><h2>الأسئلة</h2></div><input id="adminSearch" type="search" placeholder="بحث..."></div><div id="adminQuestionList" class="admin-question-list"></div></div>
+      </section>
+      <section class="admin-card"><div class="section-kicker">Scores</div><h2>درجات المستخدمين</h2><div class="table-wrap"><table><thead><tr><th>المستخدم</th><th>التاريخ</th><th>النتيجة</th><th>صحيح</th><th>خطأ</th><th>فارغ</th><th>المدة</th></tr></thead><tbody id="adminScores"></tbody></table></div></section>
+    </main>
+  </div>
 
-    <section id="progress" class="view single-view">
-      <div class="progress-page">
-        <div class="page-heading">
-          <div><div class="section-kicker">متابعة الأداء</div><h2>سجل المحاولات</h2></div>
-          <button id="exportProgress" class="secondary">تصدير النتائج</button>
-        </div>
-        <div id="progressCards" class="metric-grid"></div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>التاريخ</th><th>النطاق</th><th>النتيجة</th><th>صحيح</th><th>خطأ</th><th>فارغ</th><th>المدة</th></tr></thead>
-            <tbody id="attemptTable"></tbody>
-          </table>
-        </div>
-        <button id="clearProgress" class="danger-link">مسح سجل النتائج من هذا الجهاز</button>
-      </div>
-    </section>
-
-    <section id="manage" class="view single-view">
-      <div class="manage-page">
-        <div class="section-kicker">قابل للتحديث</div>
-        <h2>إضافة الأسئلة والنسخ الاحتياطي</h2>
-        <p>يمكنك تصدير البنك بصيغة JSON، تعديله، ثم استيراده. الأسئلة المستوردة تحفظ في هذا المتصفح وتندمج حسب رقم السؤال.</p>
-        <div class="manage-grid">
-          <div class="manage-card"><strong>تصدير البنك</strong><p>ينشئ نسخة من أسئلة الاختيار المتعدد الحالية.</p><button id="exportBank" class="primary">تنزيل JSON</button></div>
-          <div class="manage-card"><strong>استيراد تحديث</strong><p>يدعم ملفًا يحتوي على قائمة mcqs.</p><label class="file-button">اختيار ملف<input id="importBank" type="file" accept="application/json,.json"></label></div>
-          <div class="manage-card"><strong>نسخة احتياطية كاملة</strong><p>البنك المخصص + سجل النتائج.</p><button id="exportBackup" class="secondary">تنزيل النسخة</button></div>
-        </div>
-        <div id="importStatus" class="status-line" role="status"></div>
-        <div class="coverage-note">
-          <h3>ملاحظات التوثيق</h3>
-          <ul>
-            <li>الأسئلة السابقة من نسختي اختبار 2024، مع الحفاظ على الصياغة الإنجليزية قدر الإمكان.</li>
-            <li>بنك Rule Book أُخذ من المستندات التي تميز الخيار الصحيح بالتنسيق.</li>
-            <li>دوائر المتقدمين وعلامات المصححين لا تُعامل كمفتاح إجابة.</li>
-            <li>أي جزء ناقص من المصدر يظهر بوسم “Unclear in source” بدل تخمينه.</li>
-            <li>لا يبدأ التصحيح الآلي إلا بعد إضافة إجابة موثقة من أحدث Controlled Document.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script src="questions-data.js"></script>
-  <script src="app.js"></script>
+  <script src="questions-data.js"></script><script src="store.js"></script><script src="app.js"></script>
 </body>
 </html>

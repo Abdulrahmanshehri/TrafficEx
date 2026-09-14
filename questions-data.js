@@ -12,13 +12,10 @@ window.TRAINING_BANK = {
         "C": "The Work Foreman On Track (WFOT), when the work in the turnout has finished will send an information message to T.O. and they must check that the turnout has detection and the position on the ground match with the position represented on the interlocking.",
         "D": "All sentences above are correct."
       },
+      "answer": "D",
+      "answer_text": "All sentences above are correct.",
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 1",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-02",
@@ -31,13 +28,10 @@ window.TRAINING_BANK = {
         "C": "Not trains can run until maintenance fix the signal.",
         "D": "For any circumstances not included in the notification C3 traffic operator will follow DIDO instructions."
       },
+      "answer": "A",
+      "answer_text": "If it is not possible to open a signal towards the correct access track, the Traffic Operator and the DIDO must check that all the required and appropriate sections of that route are available for that rail vehicle movement.",
       "topic": "Notifications / Forms",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 2",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-03",
@@ -50,13 +44,10 @@ window.TRAINING_BANK = {
         "C": "Will send a notification by e-mail to the Operations Department and to Maintenance Bases with the updated information about the TSR's in force, so they can be recorded on ALL the Train Documents and checked by Maintenance Departments for their verification.",
         "D": "All sentences above are correct."
       },
+      "answer": "D",
+      "answer_text": "All sentences above are correct.",
       "topic": "TSR / CEC",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 3",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-04",
@@ -69,13 +60,10 @@ window.TRAINING_BANK = {
         "C": "If a stopped Train inside of the affected area needs help, this train shall be considered as not located even if Train driver provides a location.",
         "D": "In case of an incident, the real KP from KP75+466 to KP76+448 provided by the train driver should be applied."
       },
+      "answer": "D",
+      "answer_text": "In case of an incident, the real KP from KP75+466 to KP76+448 provided by the train driver should be applied.",
       "topic": "Notifications / Forms",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 4",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-05",
@@ -88,13 +76,10 @@ window.TRAINING_BANK = {
         "C": "Use of the alarm device in the passenger compartment.",
         "D": "Leak in the compressed air system."
       },
+      "answer": "B",
+      "answer_text": "Use of the service brake.",
       "topic": "General Operations",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 5",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-06",
@@ -107,13 +92,10 @@ window.TRAINING_BANK = {
         "C": "GSMR.",
         "D": "Automatic vigilance device."
       },
+      "answer": "B",
+      "answer_text": "Train document.",
       "topic": "General Operations",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 6",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-07",
@@ -126,13 +108,10 @@ window.TRAINING_BANK = {
         "C": "On using GSM-R system, it is not mandatory that when the communication is established, the person who is making the call and the person who is receiving the call clearly identify themselves.",
         "D": "Emergency call is a top priority call that will be answered automatically, so that in case another call is made, the latter will cut off."
       },
+      "answer": "C",
+      "answer_text": "On using GSM-R system, it is not mandatory that when the communication is established, the person who is making the call and the person who is receiving the call clearly identify themselves.",
       "topic": "General Operations",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 7",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-08",
@@ -145,13 +124,10 @@ window.TRAINING_BANK = {
         "C": "The Traffic Operator can authorize or not the train to resume the run, depending on the circumstances by procedural message.",
         "D": "The answers B and C are correct."
       },
+      "answer": "D",
+      "answer_text": "The answers B and C are correct.",
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 8",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-09",
@@ -164,13 +140,10 @@ window.TRAINING_BANK = {
         "C": "The whole train has passed the entry signal of the opposite direction.",
         "D": "The rear of the train has released the exit signal."
       },
+      "answer": "C",
+      "answer_text": "The whole train has passed the entry signal of the opposite direction.",
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 9",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-10",
@@ -183,13 +156,10 @@ window.TRAINING_BANK = {
         "C": "Time prioritized Plan formulated and issued.",
         "D": "All the previous ones and other times indicated in the HHR incident management plan."
       },
+      "answer": "D",
+      "answer_text": "All the previous ones and other times indicated in the HHR incident management plan.",
       "topic": "ICECOF / Incident Management",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 10",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-11",
@@ -202,13 +172,10 @@ window.TRAINING_BANK = {
         "C": "Kilometre Point A: The KP corresponding to the Start station, start of the incident.",
         "D": "Kilometre Point B: The KP corresponding to the End station, end of the incident."
       },
+      "answer": "B",
+      "answer_text": "Responsible for Resolution: The company responsible for resolving the incident.",
       "topic": "ICECOF / Incident Management",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 11",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-12",
@@ -221,13 +188,10 @@ window.TRAINING_BANK = {
         "C": "Anyone who sees signs of something that entails or may entails a danger to the installations, equipment or people.",
         "D": "The Traffic Manager or the Operations Manager."
       },
+      "answer": "C",
+      "answer_text": "Anyone who sees signs of something that entails or may entails a danger to the installations, equipment or people.",
       "topic": "ICECOF / Incident Management",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 12",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-13",
@@ -240,13 +204,10 @@ window.TRAINING_BANK = {
         "C": "Serious Accident: A train collision or derailing without fatalities and less than 3 casualties.",
         "D": "Emergency: Any occurrence which causes medium impact on railway transport and originates from any of the following: Railway accident, natural disaster, terrorist attack, sabotage."
       },
+      "answer": "A",
+      "answer_text": "Accident: Any occurrence that involves the loss of human lives, serious personal injury, or serious material or environmental damages.",
       "topic": "General Operations",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 13",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-14",
@@ -259,13 +220,10 @@ window.TRAINING_BANK = {
         "C": "Maximum speed of 120 Km/h or lower.",
         "D": "All sentences above are right."
       },
+      "answer": "D",
+      "answer_text": "All sentences above are right.",
       "topic": "General Operations",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 14",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-15",
@@ -278,13 +236,10 @@ window.TRAINING_BANK = {
         "C": "Defines an arbitrary set of days. The reference calendars are entities that do not depend on trains; therefore, they can be used in any number of trains.",
         "D": "It is a lunar calendar."
       },
+      "answer": "C",
+      "answer_text": "Defines an arbitrary set of days. The reference calendars are entities that do not depend on trains; therefore, they can be used in any number of trains.",
       "topic": "TPMS / TMS",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 15",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-16",
@@ -297,13 +252,10 @@ window.TRAINING_BANK = {
         "C": "CRC Commercial Management.",
         "D": "OCC Manager."
       },
+      "answer": "A",
+      "answer_text": "Traffic and Operation Chief.",
       "topic": "OCC Organization",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 16",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-17",
@@ -316,13 +268,10 @@ window.TRAINING_BANK = {
         "C": "Category A (Level 3)",
         "D": "Category D (Level 4)"
       },
+      "answer": "C",
+      "answer_text": "Category A (Level 3)",
       "topic": "ICECOF / Incident Management",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 17",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-18",
@@ -335,13 +284,10 @@ window.TRAINING_BANK = {
         "C": "The Traffic Operator is responsible for checking with the Security Control Room (SRC) Supervisor that emergency services have been notified.",
         "D": "The PSCC operator is responsible for checking with the Security Control Room (SRC) Supervisor that emergency services have been notified."
       },
+      "answer": "A",
+      "answer_text": "The CRC Traffic and Operation Chief is responsible for checking with the Security Control Room (SRC) Supervisor that emergency services have been notified.",
       "topic": "ICECOF / Incident Management",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 18",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-19",
@@ -354,13 +300,10 @@ window.TRAINING_BANK = {
         "C": "A gradient greater than 10 mm/m in the stations.",
         "D": "All sentences above are right."
       },
+      "answer": "B",
+      "answer_text": "The maximum speed in each section.",
       "topic": "Notifications / Forms",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 19",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "CH-2024-20",
@@ -373,13 +316,10 @@ window.TRAINING_BANK = {
         "C": "Can send a train giving to the train driver the additional message established for that propose.",
         "D": "Will call the maintenance manager to request information about it."
       },
+      "answer": "C",
+      "answer_text": "Can send a train giving to the train driver the additional message established for that propose.",
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf"
-      ],
-      "source_detail": "Nawaf,s theorical exam sheet.pdf / Salem,s theorical exam sheet.pdf - question 20",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-01",
@@ -392,13 +332,10 @@ window.TRAINING_BANK = {
         "C": "In stations: requesting it by informative message.",
         "D": "Answer B and C are true."
       },
+      "answer": "D",
+      "answer_text": "Answer B and C are true.",
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 1",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-02",
@@ -411,13 +348,10 @@ window.TRAINING_BANK = {
         "C": "Installation from which the local control of a specific interlocking could be carried out.",
         "D": "Railway infrastructure connecting two given points."
       },
+      "answer": "A",
+      "answer_text": "Means to guarantee a minimum distance between trains running in the same direction and to guarantee that two trains running in opposite directions are not in the same section of track simultaneously.",
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 2",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-03",
@@ -430,13 +364,10 @@ window.TRAINING_BANK = {
         "C": "The RBC.",
         "D": "The onboard equipment."
       },
+      "answer": "B",
+      "answer_text": "The Centralized ERTMS Control Post (CEC).",
       "topic": "TSR / CEC",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 3",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-04",
@@ -449,13 +380,10 @@ window.TRAINING_BANK = {
         "C": "Maintenance Program.",
         "D": "Work Order."
       },
+      "answer": "D",
+      "answer_text": "Work Order.",
       "topic": "General Operations",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 4",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-05",
@@ -468,13 +396,10 @@ window.TRAINING_BANK = {
         "C": "A track is considered obstructed when there are trespassers in.",
         "D": "All answers are right."
       },
+      "answer": "A",
+      "answer_text": "A track is considered obstructed when the railway traffic along the track is not guaranteed.",
       "topic": "General Operations",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 5",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-06",
@@ -487,13 +412,10 @@ window.TRAINING_BANK = {
         "C": "The Negative Feeder.",
         "D": "All answers are wrong."
       },
+      "answer": "D",
+      "answer_text": "All answers are wrong.",
       "topic": "General Operations",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 6",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-07",
@@ -506,13 +428,10 @@ window.TRAINING_BANK = {
         "C": "Shunting run from the point where this is shown until the point defined as the end of the aforesaid movement.",
         "D": "To stop in front of the signal not passing it."
       },
+      "answer": "C",
+      "answer_text": "Shunting run from the point where this is shown until the point defined as the end of the aforesaid movement.",
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 7",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-08",
@@ -525,13 +444,10 @@ window.TRAINING_BANK = {
         "C": "The Traffic Operator will authorize to continue by procedural message.",
         "D": "The Train cannot be moved back, and the train must be protected."
       },
+      "answer": "D",
+      "answer_text": "The Train cannot be moved back, and the train must be protected.",
       "topic": "General Operations",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 8",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-09",
@@ -544,13 +460,10 @@ window.TRAINING_BANK = {
         "C": "Hot box, Very hot box and Differential box.",
         "D": "Warning, Out of Service and Deactivation warning."
       },
+      "answer": "B",
+      "answer_text": "Supervised without Object, Supervised with Object and Without Supervision.",
       "topic": "ERTMS / Train Systems",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 9",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-10",
@@ -563,13 +476,10 @@ window.TRAINING_BANK = {
         "C": "At a maximum speed of 160 km/h.",
         "D": "At a maximum speed of 80 km/h."
       },
+      "answer": "D",
+      "answer_text": "At a maximum speed of 80 km/h.",
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 10",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-11",
@@ -582,13 +492,10 @@ window.TRAINING_BANK = {
         "C": "The Work Foreman On Track (WFOT), when the work on the turnout is complete must send a procedural message to the Traffic Operator (TO) to inform about.",
         "D": "When the work on the turnout has finished, the WFOT and the TO must agree that the turnout has the correct detection and that the position of the turnout(s) on the ground corresponds totally with the position represented on the interlocking."
       },
+      "answer": "C",
+      "answer_text": "The Work Foreman On Track (WFOT), when the work on the turnout is complete must send a procedural message to the Traffic Operator (TO) to inform about.",
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 11",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-12",
@@ -601,13 +508,10 @@ window.TRAINING_BANK = {
         "C": "From time to time.",
         "D": "Never."
       },
+      "answer": "A",
+      "answer_text": "Always.",
       "topic": "General Operations",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 12",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-13",
@@ -620,13 +524,10 @@ window.TRAINING_BANK = {
         "C": "Only one MOW vehicle or train is allowed in that blocked area.",
         "D": "There is no need to apply the rest of BTD conditions."
       },
+      "answer": "D",
+      "answer_text": "There is no need to apply the rest of BTD conditions.",
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 13",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-14",
@@ -640,12 +541,7 @@ window.TRAINING_BANK = {
         "D": "All sentences above are wrong."
       },
       "topic": "General Operations",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 14",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-15",
@@ -658,13 +554,10 @@ window.TRAINING_BANK = {
         "C": "It is authorized the establishment of Secondary Routes for the movement of the auscultation vehicle.",
         "D": "All sentences above are right."
       },
+      "answer": "D",
+      "answer_text": "All sentences above are right.",
       "topic": "General Operations",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 15",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-16",
@@ -678,12 +571,7 @@ window.TRAINING_BANK = {
         "D": "It indicates that the turnout has lost detection on normal position."
       },
       "topic": "General Operations",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 16",
       "kind": "past",
-      "confidence": "unverified",
       "image": "assets/tariq-theory-page-5.jpg"
     },
     {
@@ -697,13 +585,10 @@ window.TRAINING_BANK = {
         "C": "Write reports, analysis and studies related to railway traffic management.",
         "D": "Communicate immediately the Security Operator (SRC) the emergency situations."
       },
+      "answer": "B",
+      "answer_text": "Supervise and coordinate all CRC groups.",
       "topic": "OCC Organization",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 17",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-18",
@@ -717,12 +602,7 @@ window.TRAINING_BANK = {
         "D": "Operations in degraded mode only can be authorised by TO."
       },
       "topic": "General Operations",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 18",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-19",
@@ -735,13 +615,10 @@ window.TRAINING_BANK = {
         "C": "The preferred method of Evacuation is in a platform at an open station.",
         "D": "Evacuation along the track is the second preferred method."
       },
+      "answer": "C",
+      "answer_text": "The preferred method of Evacuation is in a platform at an open station.",
       "topic": "General Operations",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 19",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "id": "TS-2024-20",
@@ -754,13 +631,10 @@ window.TRAINING_BANK = {
         "C": "To establish TSRs.",
         "D": "To remove TSRs."
       },
+      "answer": "A",
+      "answer_text": "To send an unconditional stop to the trains in case of over-speed.",
       "topic": "TSR / CEC",
-      "sources": [
-        "Theoretical Tariq Zuhair.pdf"
-      ],
-      "source_detail": "Theoretical Tariq Zuhair.pdf - question 20",
-      "kind": "past",
-      "confidence": "unverified"
+      "kind": "past"
     },
     {
       "question": "Any power shutdown that implies the installation of protection devices preventing the normal railway traffic must require…",
@@ -771,14 +645,8 @@ window.TRAINING_BANK = {
         "D": "The PSCC Operator shall decide."
       },
       "topic": "Adverse Weather / Infrastructure",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-001"
     },
     {
@@ -789,15 +657,11 @@ window.TRAINING_BANK = {
         "C": "A TSR of 80 km/h shall be established in the affected stretch",
         "D": "A TSR of 160 km/h shall be established in the affected stretch"
       },
+      "answer": "A",
+      "answer_text": "A TSR of 200 km/h shall be established in the affected stretch",
       "topic": "Adverse Weather / Infrastructure",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-002"
     },
     {
@@ -809,14 +673,8 @@ window.TRAINING_BANK = {
         "D": "3 meters outside each catenary pole measured from 2.30 m over the rails and no limits in height"
       },
       "topic": "Adverse Weather / Infrastructure",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-003"
     },
     {
@@ -828,14 +686,8 @@ window.TRAINING_BANK = {
         "D": "Track crossing in which the rails cross obliquely forming a diamond shaped center"
       },
       "topic": "Adverse Weather / Infrastructure",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-004"
     },
     {
@@ -847,14 +699,8 @@ window.TRAINING_BANK = {
         "D": "Independently of the on-board device the train driver will reduce to 160 km/h and will wait until the next detector"
       },
       "topic": "ERTMS / Train Systems",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-005"
     },
     {
@@ -866,14 +712,8 @@ window.TRAINING_BANK = {
         "D": "It will be assumed that the affected track the detector is working and has not detected any fallen object"
       },
       "topic": "ERTMS / Train Systems",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-006"
     },
     {
@@ -885,14 +725,8 @@ window.TRAINING_BANK = {
         "D": "It will be assumed that the affected track the detector is working and has not detected any fallen object"
       },
       "topic": "ERTMS / Train Systems",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-007"
     },
     {
@@ -904,14 +738,8 @@ window.TRAINING_BANK = {
         "D": "A and C are correct"
       },
       "topic": "ERTMS / Train Systems",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-008"
     },
     {
@@ -923,14 +751,8 @@ window.TRAINING_BANK = {
         "D": "The trackside equipment"
       },
       "topic": "ERTMS / Train Systems",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-009"
     },
     {
@@ -942,14 +764,8 @@ window.TRAINING_BANK = {
         "D": "of a slope of 10 meters every 100 meters in the running direction"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-010"
     },
     {
@@ -961,14 +777,8 @@ window.TRAINING_BANK = {
         "D": "of a slope of the 10 per cent in both direction"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-011"
     },
     {
@@ -979,15 +789,11 @@ window.TRAINING_BANK = {
         "C": "If the breakdown of the onboard GSMR equipment takes place during the running and the m GSM‐R mobile terminal cannot be used, that trainset must be changed in the next station.",
         "D": "If the communication with a train stopped is not possible, the Traffic Operator must send a helping train as soon as possible"
       },
+      "answer": "B",
+      "answer_text": "If the breakdown of the onboard GSMR equipment is detected in the origin station where the running starts the GSMR mobile terminal must be used. If this mobile terminal does not work, the train is considered unsuitable for railway traffic and must be replaced.",
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-012"
     },
     {
@@ -999,14 +805,8 @@ window.TRAINING_BANK = {
         "D": "Trying to open the signals"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-013"
     },
     {
@@ -1018,15 +818,8 @@ window.TRAINING_BANK = {
         "D": "If it happens in the origin station and the train and he can use the mobile terminal, it can depart"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-014"
     },
     {
@@ -1038,14 +831,8 @@ window.TRAINING_BANK = {
         "D": "It is allowed the operation of any train through the adjacent track but with ERTMS system connected"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-015"
     },
     {
@@ -1057,14 +844,8 @@ window.TRAINING_BANK = {
         "D": "They have to be parked in a Siding before crossing with a commercial train"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-016"
     },
     {
@@ -1076,14 +857,8 @@ window.TRAINING_BANK = {
         "D": "Only in TSB"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-017"
     },
     {
@@ -1095,14 +870,8 @@ window.TRAINING_BANK = {
         "D": "With red-blue aspect in the exit signal"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-018"
     },
     {
@@ -1114,14 +883,8 @@ window.TRAINING_BANK = {
         "D": "They have to request for a TIBT"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-019"
     },
     {
@@ -1133,15 +896,8 @@ window.TRAINING_BANK = {
         "D": "Exceptionally ,it can be carried out with the first commercial train running at a maximum speed of 160 km/h or lower."
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-020"
     },
     {
@@ -1153,15 +909,8 @@ window.TRAINING_BANK = {
         "D": "If the procedural message has been issued will be cancelled with another procedural message"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-021"
     },
     {
@@ -1173,14 +922,8 @@ window.TRAINING_BANK = {
         "D": "All of them are wrong."
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-022"
     },
     {
@@ -1191,15 +934,11 @@ window.TRAINING_BANK = {
         "C": "Points installed in stations where there are not exit signals (crossovers) are named ‘entry points’.",
         "D": "A and B are right"
       },
+      "answer": "C",
+      "answer_text": "Points installed in stations where there are not exit signals (crossovers) are named ‘entry points’.",
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-023"
     },
     {
@@ -1211,14 +950,8 @@ window.TRAINING_BANK = {
         "D": "Without exceeding 30 km/h, or 20 km/h if pushing, while being able to stop in the event of any obstacle visible from the Train Driver's cab or in the event of a stop signal"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-024"
     },
     {
@@ -1230,14 +963,8 @@ window.TRAINING_BANK = {
         "D": "Mode to be used for shunting operations to be performed. This may be selected by the Train Driver"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-025"
     },
     {
@@ -1249,14 +976,8 @@ window.TRAINING_BANK = {
         "D": "The objective of these is to describe the characteristics and regulate the use of all types of installations."
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-026"
     },
     {
@@ -1268,14 +989,8 @@ window.TRAINING_BANK = {
         "D": "Without exceeding 30 km/h, or 20 km/h if pushing, while being able to stop in the event of any obstacle visible from the Train Driver's cab or in the event of a stop signal"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-027"
     },
     {
@@ -1287,14 +1002,8 @@ window.TRAINING_BANK = {
         "D": "To perform a shunting movement from the point where this is authorised until the point defined as the end of the movement."
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-028"
     },
     {
@@ -1306,14 +1015,8 @@ window.TRAINING_BANK = {
         "D": "By a Top Priority Emergency Message."
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-029"
     },
     {
@@ -1324,15 +1027,11 @@ window.TRAINING_BANK = {
         "C": "Sending one similar to the Train Driver by any available means.",
         "D": "All of them are true"
       },
+      "answer": "A",
+      "answer_text": "The Traffic Operator transmits a Procedural message to the Train Driver including the train number, origin and destination, TSR and other incidences that affect to the HHR Line",
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-030"
     },
     {
@@ -1344,14 +1043,8 @@ window.TRAINING_BANK = {
         "D": "In the odd side from which the odd trains arrive, it is the first point that the train finds"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-031"
     },
     {
@@ -1363,14 +1056,8 @@ window.TRAINING_BANK = {
         "D": "In the even side from which the odd trains arrive, it is the second point that the train finds."
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-032"
     },
     {
@@ -1382,15 +1069,8 @@ window.TRAINING_BANK = {
         "D": "A and C are correct"
       },
       "topic": "General Operations",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-033"
     },
     {
@@ -1402,16 +1082,9 @@ window.TRAINING_BANK = {
         "D": "From the place where dispatched, if the distance between the stopped train and Emergency Vehicle is more than ."
       },
       "topic": "ICECOF / Incident Management",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
-      "id": "QB-034",
-      "sourceIssue": "Unclear in source: the distance and speed values are missing from the extracted document."
+      "id": "QB-034"
     },
     {
       "question": "Train Help. For a proper identification of the point where a train is stopped, before to send an emergency vehicle, the Traffic Operator must take into account:",
@@ -1421,15 +1094,11 @@ window.TRAINING_BANK = {
         "C": "The ascendant or descending direction of the KP related to the stopped train.",
         "D": "All of them."
       },
+      "answer": "D",
+      "answer_text": "All of them.",
       "topic": "ICECOF / Incident Management",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-035"
     },
     {
@@ -1440,15 +1109,11 @@ window.TRAINING_BANK = {
         "C": "A and B are true.",
         "D": "A and B are wrong"
       },
+      "answer": "C",
+      "answer_text": "A and B are true.",
       "topic": "Notifications / Forms",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-036"
     },
     {
@@ -1459,15 +1124,11 @@ window.TRAINING_BANK = {
         "C": "The objective of these is to describe the characteristics of all types of trains",
         "D": "A, B and C are wrong"
       },
+      "answer": "D",
+      "answer_text": "A, B and C are wrong",
       "topic": "Notifications / Forms",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-037"
     },
     {
@@ -1479,14 +1140,8 @@ window.TRAINING_BANK = {
         "D": "supervises the maximum speed or a lower TSR if it is entered in the system, but the train driver has to verify the track occupation"
       },
       "topic": "OCC Organization",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-038"
     },
     {
@@ -1498,14 +1153,8 @@ window.TRAINING_BANK = {
         "D": "Until the shunting signals of Siding 3."
       },
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-039"
     },
     {
@@ -1517,15 +1166,8 @@ window.TRAINING_BANK = {
         "D": "Notification C"
       },
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-040"
     },
     {
@@ -1537,14 +1179,8 @@ window.TRAINING_BANK = {
         "D": "Yes, a BTD or TIBT must be applied."
       },
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-041"
     },
     {
@@ -1556,15 +1192,8 @@ window.TRAINING_BANK = {
         "D": "No."
       },
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-042"
     },
     {
@@ -1576,14 +1205,8 @@ window.TRAINING_BANK = {
         "D": "A and B are wrong"
       },
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-043"
     },
     {
@@ -1595,14 +1218,8 @@ window.TRAINING_BANK = {
         "D": "Infrastructure Vehicle Operator"
       },
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-044"
     },
     {
@@ -1613,16 +1230,11 @@ window.TRAINING_BANK = {
         "C": "Works with machinery.",
         "D": "Any type of works."
       },
+      "answer": "A",
+      "answer_text": "Works out of the stabling zone where no protection by the Exit signals of the affected tracks is achieved.",
       "topic": "On-track Works / BTD / TIBT",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-045"
     },
     {
@@ -1634,15 +1246,8 @@ window.TRAINING_BANK = {
         "D": "The rear of the train has released the exit signal"
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-046"
     },
     {
@@ -1654,14 +1259,8 @@ window.TRAINING_BANK = {
         "D": "By the exit signal showing the flashing white aspect"
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-047"
     },
     {
@@ -1673,14 +1272,8 @@ window.TRAINING_BANK = {
         "D": "- The answers B and C are correct."
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-048"
     },
     {
@@ -1692,14 +1285,8 @@ window.TRAINING_BANK = {
         "D": "The identification of the train will not change."
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-049"
     },
     {
@@ -1711,14 +1298,8 @@ window.TRAINING_BANK = {
         "D": "- The train reversal movements are completely forbidden in the HHR line."
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-050"
     },
     {
@@ -1730,14 +1311,8 @@ window.TRAINING_BANK = {
         "D": "To run normally, should nothing prevent this, complying with DMI indications"
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-051"
     },
     {
@@ -1749,14 +1324,8 @@ window.TRAINING_BANK = {
         "D": "No matter the location, the reversal of a train always has to be requested or ordered with a procedural message"
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-052"
     },
     {
@@ -1767,15 +1336,11 @@ window.TRAINING_BANK = {
         "C": "As long as the train that has been authorised or ordered to reverse is not parked in the station, only shunting movement of trains towards the affected block section can be performed.",
         "D": "All of them are wrong"
       },
+      "answer": "A",
+      "answer_text": "To enter to the station, the Train Driver must follow the indication given by the entry signal.",
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-053"
     },
     {
@@ -1786,15 +1351,11 @@ window.TRAINING_BANK = {
         "C": "To enter the station, the Train Driver must follow the indication given previously by the Traffic Operator",
         "D": "All of them are right"
       },
+      "answer": "B",
+      "answer_text": "The Traffic Operator must write the Route and Track affected in the relevant column of ‘Trains Running’ area of his Book of Forms, indicating the number of the affected train in the proper row and column.",
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-054"
     },
     {
@@ -1806,15 +1367,8 @@ window.TRAINING_BANK = {
         "D": "By means of red and white flashing aspect on the exit signal"
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-055"
     },
     {
@@ -1826,15 +1380,8 @@ window.TRAINING_BANK = {
         "D": "Shunting run from the point where this is shown until the next station"
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-056"
     },
     {
@@ -1846,14 +1393,8 @@ window.TRAINING_BANK = {
         "D": "The Train Driver must run according to the trackside signals, in compliance with Temporary Speed Restrictions"
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-057"
     },
     {
@@ -1865,14 +1406,8 @@ window.TRAINING_BANK = {
         "D": "Tests Notifications"
       },
       "topic": "Rule Book / Traffic Regulation",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-058"
     },
     {
@@ -1884,15 +1419,8 @@ window.TRAINING_BANK = {
         "D": "With an additional message if the TSR have not been entered correctly in the ERTME/ETCS system but it has been signalized on the ground"
       },
       "topic": "TSR / CEC",
-      "sources": [
-        "ALL.docx",
-        "Gupo 1 david v2.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-059"
     },
     {
@@ -1904,19 +1432,9 @@ window.TRAINING_BANK = {
         "D": "In case of TSR greater than or equal to 40 km/h, using an Additional message"
       },
       "topic": "TSR / CEC",
-      "sources": [
-        "ALL.docx",
-        "Gupo 2 david v2.docx"
-      ],
-      "source_detail": "ALL.docx",
       "kind": "bank",
       "role": "Both",
-      "confidence": "unverified",
       "id": "QB-060"
     }
-  ],
-  "notes": {
-    "excluded": "No answer is treated as authoritative until verified against a controlled operational document. Conflicting visual items were excluded from automatic scoring.",
-    "update": "Use the Import Questions control to add or replace MCQ questions from a JSON file. Progress remains on this device unless exported."
-  }
+  ]
 };
